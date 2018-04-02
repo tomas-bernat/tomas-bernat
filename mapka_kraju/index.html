@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+
+    <title>Interaktivní mapa krajů ČR</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="content">
+        <h2>POČET OBYVATEL V KRAJÍCH ČR (2011)</h2>
+        <label class="switch">
+            <input type="checkbox" id="switchButton" onclick="switchMap()">
+            <span class="slider round"></span>
+        </label>
+
+        <div id="map">
+            <object id="svg-kraje" data="./images/kraje.svg" type="image/svg+xml"></object>
+        </div>
+    </div>
+    <script src="map.js"></script>
+</body>
+</html>
